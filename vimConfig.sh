@@ -42,3 +42,12 @@ fi
 rm log.txt
 #创建软连接
 ln -s ~/../usr/bin/gcc-9 ~/../usr/bin/gcc
+
+#拷贝.vimrc配置文件到主目录
+cp .vimrc ~
+
+#配置bash命令提示符
+echo "PS1='\[\e[1;36m\]\u\[\e[1;31m\]@\[\e[1;36m\]\h\[\e[1;31m\]:\[\e[01;34m\]\w\[\e[00m\]\$ '" >> $HOME/.bashrc
+
+
+
